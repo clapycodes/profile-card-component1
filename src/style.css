@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+:root {
+  --font-color: #141843;
+  --sub-color: #5F627A;
+  --btn-primary-color: #AEF1F5;
+  --btn-secondary-color : #FFDDB6;
+  --border-color: #E6E6E6;
+  --eclipse1-bg: radial-gradient(50% 50.00% at 50% 50.00%, #FFDDB6 0%, rgba(255, 221, 182, 0.00) 100%);
+  --eclipse3-bg: radial-gradient(50% 50.00% at 50% 50.00%, #C6FCFF 0%, rgba(198, 252, 255, 0.00) 100%);
+
+
+
+
+
+
+  /* border - radius */
+  --eclipse1-radius: 720px;
+  --eclipse2-radius: 1000px;
+  --eclipse3-radius: 528px; 
+}
+
+body {
+  background: #FFFFFF;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom right, #ffddb6, #c6fcff, #edbbff);
+
+}
+/* write your CSS here */
+
+.btn {
+  width: 160px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--font-color);
+}
+
+/* Add the styling for the profile card */
+
+
+
+/* Container to center the card */
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; */
+  
+}
+
+/* Profile card */
+ .card {
+  display: flex;
+  position: relative;
+  width: 1098px;
+  height: 544px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 50px;
+} 
+.img-container {
+  display: inline-block;
+  margin-left: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #E6E6E6;
+  background: url('/svgviewer-png-output.png'), lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+
+.content {
+  flex: 1;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 20px;
+  padding: 20px;
+  line-height: 1.5;
+}
+.title {
+  color: var(--font-color);
+  font-family: 'Merriweather';
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--sub-color);
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 400;
+}
+.description {
+  color: var(--font-color);
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card__social {
+	margin: 2.69em 0 2.69em;
+}
+
+.row {
+	display: flex;
+}
+.col:not(:last-child) {
+	border-right: 1px solid var(--font-color);
+}
+
+.col h3 {
+	font-size: 20px;
+	text-align: center;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.col:first-of-type h3 {
+	padding-right: 2.25em;
+}
+
+.col:nth-of-type(2) h3 {
+	padding: 0 2.25em;
+}
+
+.col:last-of-type h3 {
+	padding-left: 2.25em;
+}
+
+.display-block {
+	display: block;
+  color: #141843;
+text-align: center;
+font-family: 'Poppins';
+font-size: 20px;
+font-weight: 500;
+}
+
+.buttons {
+  display: block;
+}
+.btn.btn-primary {
+  color: var(--font-color);
+  background: #AEF1F5;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn.btn-secondary {
+  color: var(--font-color);
+  background: #FFDDB6;
+  border-radius: 10px; 
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn.btn-primary:hover {
+  background: #acdadc;
+}
+.btn.btn.btn-secondary:hover {
+  background: #dabd9b;
+}
